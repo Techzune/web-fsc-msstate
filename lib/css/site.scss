@@ -1,0 +1,36 @@
+// define some colors for Bootstrap/Bootswatch
+$primary: #660000;
+$dark: darken($primary, 3%);
+$accent: #FFB81C;
+
+$navbar-brand-font-size: 2.5rem;
+$navbar-link-font-size: 2.5rem;
+
+// import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// import Bootswatch theme (Flatly)
+@import "bootswatch-flatly/variables";
+@import "bootswatch-flatly/bootswatch";
+
+// this overrides the Bootswatch theme to use the dark
+.bg-dark {
+  background-color: $dark !important;
+
+  // in the nav bar, use the accent color
+  &.navbar-dark .navbar-nav {
+    .nav-link:focus,
+    .nav-link:hover,
+    .active > .nav-link {
+      color: $accent !important;
+    }
+  }
+
+  .nav-link.active {
+    font-weight: bold;
+  }
+}
+
+.bg-black {
+  background-color: black;
+}
