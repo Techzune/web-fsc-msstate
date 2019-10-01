@@ -1,28 +1,10 @@
 <?php
-/*
- * ROUTER
- * redirects URLs to their proper .php files.
- */
+$_PAGE["title"] = "Home";
+include "inc/baseHTML.php";
+?>
 
-// get the URI requested
-$request = $_SERVER['REQUEST_URI'];
+<?php startblock("content") ?>
+<div class="row text-center justify-content-center">
 
-// remove .php if used
-$request = rtrim($request, ".php");
-
-// redirect '' or '/' to home
-if ($request == '' or $request == '/') {
-  $request = "/home";
-}
-
-// redirect to actual .php file
-$request = __DIR__ . $request . ".php";
-
-// check if it exists, if so: use it!
-if (!file_exists($request)) {
-  require '404.php';
-} else {
-  /** @noinspection PhpIncludeInspection */
-  // (this stops PhpStorm complaining)
-  require $request;
-}
+</div>
+<?php endblock() ?>
