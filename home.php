@@ -1,5 +1,5 @@
 <?php
-$_PAGE["title"] = "Events";
+$_PAGE["title"] = "Home";
 include "inc/baseHTML.php";
 ?>
 

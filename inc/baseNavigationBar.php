@@ -15,7 +15,6 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <div class="navbar-nav mx-md-auto">
       <?= navlink("home", "/"); ?>
-      <?= navlink("events", "/events"); ?>
       <?= navlink("bullybox", "/bullybox"); ?>
       <?= navlink("contact", "/contact"); ?>
     </div>
