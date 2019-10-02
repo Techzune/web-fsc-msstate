@@ -15,6 +15,11 @@ if ($request == '' or $request == '/') {
   $request = "/home";
 }
 
+// redirect bullybox to giftbox
+if ($request == '/bullybox') {
+  $request = '/giftboxes';
+}
+
 // redirect to actual .php file
 $request = __DIR__ . $request . ".php";
 

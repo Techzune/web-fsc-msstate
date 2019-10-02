@@ -3,7 +3,6 @@ $primary: #660000;
 $dark: darken($primary, 3%);
 $accent: #FFB81C;
 
-$navbar-brand-font-size: 2.5rem;
 $navbar-link-font-size: 2.5rem;
 
 // import Bootstrap
@@ -33,4 +32,22 @@ $navbar-link-font-size: 2.5rem;
 
 .bg-black {
   background-color: black;
+}
+
+@mixin width {
+  width: auto !important;
+}
+
+table {
+  &.table-fit {
+    @include width;
+    table-layout: auto !important;
+    thead th, tfoot th  {
+      @include width;
+    }
+    tbody td, tfoot td {
+      @include width;
+      @extend .px-3;
+    }
+  }
 }
