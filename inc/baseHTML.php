@@ -13,7 +13,7 @@ session_start();
 <head>
   <meta charset="UTF-8">
   <title>
-    <?= $_PAGE["title"] ?> | FSC
+    <?php echo $_PAGE["title"] ?> | FSC
   </title>
 </head>
 

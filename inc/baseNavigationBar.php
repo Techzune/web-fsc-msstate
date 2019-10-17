@@ -15,9 +15,9 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center py-0 py-md-1">
   <div class="collapse navbar-collapse" id="navbarNav">
     <div class="navbar-nav mx-md-auto">
-      <?= navlink("Home", "/"); ?>
-      <?= navlink("Gift Boxes", "/giftboxes"); ?>
-      <?= navlink("Contact", "/contact"); ?>
+      <?php echo navlink("Home", "/"); ?>
+      <?php echo navlink("Gift Boxes", "/giftboxes"); ?>
+      <?php echo navlink("Contact", "/contact"); ?>
     </div>
   </div>
 </nav>
